@@ -1618,6 +1618,12 @@ declare module "noblox.js" {
     */
     function updateUniverse(universeId: number, settings: UniverseSettings, jar?: CookieJar): Promise<UpdateUniverseResponse>;
 
+    /**
+     * 🔐 Gets recent Robux revenue summary for a group; shows pending Robux. | Requires "Spend group funds" permissions.
+     */
+    function getGameRevenueSummary(game: number, timeFrame?: "Daily" | "Weekly" | "Monthly" | "Yearly"): Promise<RevenueSummaryResponse>;
+
+
     /// Group
 
     /**
